@@ -51,7 +51,7 @@ def check_firebase_connection():
         # Try a simple operation to verify connection
         db.collection('test').limit(1).get()
         return True
-    except Exception as e:
+    except Exception as e: 
         print(f"Firebase connection test failed: {e}")
         return False
 
