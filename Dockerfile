@@ -19,7 +19,8 @@ RUN pip install -r requirements.txt
 EXPOSE 10000
 
 # Command to run the app with Gunicorn for production
-CMD ["gunicorn", "--timeout", "120", "-b", "0.0.0.0:10000", "app:app"]
+CMD ["gunicorn", "--timeout", "60", "-b", "0.0.0.0:10000", "app:app"]
+
 
 
 
